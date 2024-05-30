@@ -2,6 +2,10 @@
     "$schema": "/schema.json",
     "templateName": "rt-admin-template",
     "config": {
+                "version": {
+            "default": "0.1.0",
+            "type": "string"
+        },
         "full_name": {
             "default": "Andriy Podolian",
             "type": "string"
@@ -30,10 +34,6 @@
             "default": "{{ cookiecutter.github_username }}",
             "type": "string"
         },
-        "version": {
-            "default": "0.1.0",
-            "type": "string"
-        },
         "use_pytest": {
             "default": "y",
             "type": "radio",
@@ -58,6 +58,14 @@
                 "n"
             ]
         },
+                "create_author_file": {
+            "default": "y",
+            "type": "radio",
+            "choices": [
+                "y",
+                "n"
+            ]
+        },
         "command_line_interface": {
             "type": "choices",
             "choices": [
@@ -66,14 +74,6 @@
                 "No command-line interface"
             ],
             "default": "Typer"
-        },
-        "create_author_file": {
-            "default": "y",
-            "type": "radio",
-            "choices": [
-                "y",
-                "n"
-            ]
         },
         "open_source_license": {
             "type": "choices",
