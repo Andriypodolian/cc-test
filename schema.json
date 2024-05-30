@@ -34,7 +34,8 @@
                 "boolean",
                 "integer",
                 "number",
-                "string"
+                "string",
+                "radio"
               ]
             },
             "description": {
