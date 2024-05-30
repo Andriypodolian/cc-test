@@ -1,5 +1,6 @@
 {
     "$schema": "/schema.json",
+    "templateName": "rt-admin-template",
     "config": {
         "full_name": {
             "default": "Andriy Podolian",
