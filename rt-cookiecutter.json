@@ -1,0 +1,94 @@
+{
+    "$schema": "/schema.json",
+    "config": {
+        "full_name": {
+            "default": "Andriy Podolian",
+            "type": "string"
+        },
+        "email": {
+            "default": "andrew@regulus.team",
+            "type": "string"
+        },
+        "github_username": {
+            "default": "andriy_podolian",
+            "type": "string"
+        },
+        "project_name": {
+            "default": "rt-admin-cc",
+            "type": "string"
+        },
+        "project_slug": {
+            "default": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+            "type": "string"
+        },
+        "project_short_description": {
+            "default": "A cookiecutter template for creating a Python package with a CLI",
+            "type": "string"
+        },
+        "pypi_username": {
+            "default": "{{ cookiecutter.github_username }}",
+            "type": "string"
+        },
+        "version": {
+            "default": "0.1.0",
+            "type": "string"
+        },
+        "use_pytest": {
+            "default": "y",
+            "type": "choices",
+            "choices": [
+                "y",
+                "n"
+            ]
+        },
+        "use_pypi_deployment_with_travis": {
+            "default": "y",
+            "type": "choices",
+            "choices": [
+                "y",
+                "n"
+            ]
+        },
+        "add_pyup_badge": {
+            "default": "y",
+            "type": "choices",
+            "choices": [
+                "y",
+                "n"
+            ]
+        },
+        "command_line_interface": {
+            "type": "choices",
+            "choices": [
+                "Typer",
+                "Argparse",
+                "No command-line interface"
+            ],
+            "default": "Typer"
+        },
+        "create_author_file": {
+            "default": "y",
+            "type": "choices",
+            "choices": [
+                "y",
+                "n"
+            ]
+        },
+        "open_source_license": {
+            "type": "choices",
+            "choices": [
+                "MIT license",
+                "BSD license",
+                "ISC license",
+                "Apache Software License 2.0",
+                "GNU General Public License v3",
+                "Not open source"
+            ],
+            "default": "MIT license"
+        },
+        "__gh_slug": {
+            "default": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
+            "type": "string"
+        }
+    }
+}
