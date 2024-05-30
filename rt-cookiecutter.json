@@ -37,7 +37,7 @@
         "use_pytest": {
             "default": "y",
             "type": "radio",
-            "radio": [
+            "choices": [
                 "y",
                 "n"
             ]
@@ -45,7 +45,7 @@
         "use_pypi_deployment_with_travis": {
             "default": "y",
             "type": "radio",
-            "radio": [
+            "choices": [
                 "y",
                 "n"
             ]
@@ -53,14 +53,14 @@
         "add_pyup_badge": {
             "default": "y",
             "type": "radio",
-            "radio": [
+            "choices": [
                 "y",
                 "n"
             ]
         },
         "command_line_interface": {
             "type": "radio",
-            "radio": [
+            "choices": [
                 "Typer",
                 "Argparse",
                 "No command-line interface"
@@ -70,14 +70,14 @@
         "create_author_file": {
             "default": "y",
             "type": "radio",
-            "radio": [
+            "choices": [
                 "y",
                 "n"
             ]
         },
         "open_source_license": {
-            "type": "radio",
-            "radio": [
+            "type": "choices",
+            "choices": [
                 "MIT license",
                 "BSD license",
                 "ISC license",
