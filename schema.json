@@ -1,6 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "properties": {
+    "templateName": {
+      "type": "string",
+      "default": "rt-admin-template"
+    },
     "config": {
       "type": "object",
       "patternProperties": {
@@ -26,7 +30,12 @@
               "type": "boolean"
             },
             "default": {
-              "type": ["boolean", "integer", "number", "string"]
+              "type": [
+                "boolean",
+                "integer",
+                "number",
+                "string"
+              ]
             },
             "description": {
               "type": "string"
@@ -36,5 +45,7 @@
       }
     }
   },
-  "required": ["config"]
+  "required": [
+    "config"
+  ]
 }
