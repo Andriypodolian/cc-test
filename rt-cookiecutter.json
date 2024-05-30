@@ -59,7 +59,7 @@
             ]
         },
         "command_line_interface": {
-            "type": "radio",
+            "type": "choices",
             "choices": [
                 "Typer",
                 "Argparse",
