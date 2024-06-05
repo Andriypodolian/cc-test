@@ -1,83 +1,35 @@
 {
-    "$schema": "/schema.json",
     "templateName": "rt-admin-template",
-    "config": {
-                "version": {
-            "default": "0.1.0",
-            "type": "string"
-        },
-        "full_name": {
-            "default": "Andriy Podolian",
-            "type": "string"
-        },
-        "email": {
-            "default": "andrew@regulus.team",
-            "type": "string"
-        },
-        "github_username": {
-            "default": "andriy_podolian",
-            "type": "string"
-        },
-        "project_name": {
-            "default": "rt-admin-cc",
-            "type": "string"
-        },
-        "project_slug": {
-            "default": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-            "type": "string"
-        },
-        "project_short_description": {
-            "default": "A cookiecutter template for creating a Python package with a CLI",
-            "type": "string"
-        },
-        "pypi_username": {
-            "default": "{{ cookiecutter.github_username }}",
-            "type": "string"
-        },
-        "use_pytest": {
-            "default": "y",
-            "type": "radio",
-            "choices": [
+                "version": "1.0.0",
+        "full_name": "Andriy Podolian",
+        "email": "andrew@regulus.team",
+        "github_username": "andriy_podolian",
+        "project_name":  "rt-admin-cc",
+        "project_slug":  "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+        "project_short_description": "A cookiecutter template for creating a Python package with a CLI",
+        "pypi_username": "{{ cookiecutter.github_username }}",
+        "use_pytest": [
                 "y",
                 "n"
-            ]
-        },
-        "use_pypi_deployment_with_travis": {
-            "default": "y",
-            "type": "radio",
-            "choices": [
+            ],
+        "use_pypi_deployment_with_travis":  [
                 "y",
                 "n"
-            ]
-        },
-        "add_pyup_badge": {
-            "default": "y",
-            "type": "radio",
-            "choices": [
+            ],
+        "add_pyup_badge": [
                 "y",
                 "n"
-            ]
-        },
-                "create_author_file": {
-            "default": "y",
-            "type": "radio",
-            "choices": [
+            ],
+                "create_author_file":  [
                 "y",
                 "n"
-            ]
-        },
-        "command_line_interface": {
-            "type": "choices",
-            "choices": [
+            ],
+        "command_line_interface": [
                 "Typer",
                 "Argparse",
                 "No command-line interface"
             ],
-            "default": "Typer"
-        },
-        "open_source_license": {
-            "type": "choices",
-            "choices": [
+        "open_source_license": [
                 "MIT license",
                 "BSD license",
                 "ISC license",
@@ -85,11 +37,5 @@
                 "GNU General Public License v3",
                 "Not open source"
             ],
-            "default": "MIT license"
-        },
-        "__gh_slug": {
-            "default": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
-            "type": "string"
-        }
-    }
+        "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
 }
