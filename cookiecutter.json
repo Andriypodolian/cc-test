@@ -15,16 +15,21 @@
   "open_source_license": "MIT license",
   "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}",
   "__prompts__": {
-    "package_name": "Select your package name",
-    "module_name": "Select your module name",
-    "project_name": "Stylized package name",
-    "short_description": "Short description",
-    "github_username": "GitHub username or organization",
     "full_name": "Author full name",
     "email": "Author email",
+    "github_username": "GitHub username or organization",
+    "project_name": "Stylized package name",
+    "package_name": "Select your package name",
+    "project_slug": "Stylized package name",
+    "project_short_description": "Short description",
+    "pypi_username": "PyPI username",
+    "version": "Version",
+    "use_pytest": "Use pytest",
+    "use_pypi_deployment_with_travis": "Use PyPI deployment with Travis CI",
+    "add_pyup_badge": "Add pyup badge",
     "command_line_interface": "Add CLI",
-    "init_git": "Initialize a git repository"
+    "create_author_file": "Create an author file",
+    "open_source_license": "License",
+    "__gh_slug": "GitHub slug"
   }
 }
-
-
