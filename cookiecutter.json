@@ -23,7 +23,7 @@
     "full_name": "Author full name",
     "email": "Author email",
     "command_line_interface": "Add CLI",
-    "init_git": "Initialize a git repository",
+    "init_git": "Initialize a git repository"
   }
 }
 
